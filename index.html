@@ -10,31 +10,28 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="flex-container">
-      <div class="item1">
-        <img src="files/avatar.png" alt="Avatar Rudolf Zahradník" />
-      </div>
-      <div class="item2"><h1>Rudolf Zahradník</h1></div>
-    </div>
-
     <div class="container">
-      <!-- Header Section -->
-      <div class="header d-flex flex-row align-items-center">
-        <img src="files/avatar.png" alt="Avatar Rudolf Zahradník" />
-        <h1>Rudolf Zahradník</h1>
+      <div class="row">
+        <div class="col-4">
+          <img id="avatar" src="files/avatar1.png" alt="" srcset="" />
+        </div>
+        <div class="col-4" id="headline">Rudolf</div>
+        <div class="col-4" id="headline2">Zahradník</div>
       </div>
-
-      <!-- Biography Section -->
-      <div id="biography" class="my-5">
-        <h2 class="section-title">Životopis</h2>
-        <p>
+    </div>
+    <div class="container">
+      <div class="row" id="zivotopis">
+        <h2>Životopis</h2>
+        <p id="first-p">
           Jsem Rudolf Zahradník, zkušený digitální a webový specialista se
           zaměřením na tvorbu webových stránek a digitální marketing. Momentálně
           pracuji jako OSVČ a pod značkou Web HRAD tvořím webové stránky na
@@ -58,77 +55,85 @@
           hrám.
         </p>
       </div>
-
-      <!-- Portfolio Section -->
-      <div id="portfolio" class="my-5">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="portfolio-item">
-          <h3>Název projektu</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry...
-          </p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <h3>Název projektu</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry...
-          </p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <h3>Název projektu</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry...
-          </p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-            <div class="col-md-4">
-              <div class="border p-3" style="height: 200px"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Section -->
-      <div id="contact" class="contact-info my-5">
-        <h2 class="section-title">Kontakty</h2>
-        <p><strong>Adresa:</strong> Třemešná 404, Třemešná, 793 82</p>
-        <p><strong>E-mail:</strong> zahradnik.rudolf@gmail.com</p>
-        <p><strong>Telefon:</strong> +420 732 249 051</p>
+    </div>
+    <div class="container">
+      <div class="row" id="portfolio">
+        <h2>Portfolio</h2>
+        <h3 id="first-p">Coral heaven app</h3>
+        <p>
+          Návrh prostředí aplikace hotelového řetězce Coral Heaven byl pečlivě
+          navržen pomocí nástroje Figma, který je ideální pro tvorbu wireframů a
+          následných maket. Na začátku procesu jsme vytvořili podrobné
+          wireframy, které definovaly základní strukturu a funkčnost aplikace.
+          Tyto wireframy mně umožnily snadno vizualizovat uspořádání různých
+          prvků na stránkách aplikace, jako jsou navigační menu, bannery, sekce
+          s informacemi o pokojích a rezervační formuláře. Důraz jsem kladl na
+          intuitivní uživatelské rozhraní, které uživatelům umožní snadno najít
+          potřebné informace a provést rezervaci.
+        </p>
+        <p>
+          <img src="files/coral-heaven.gif" alt="" srcset="" />
+        </p>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container">
+      <div class="row" id="portfolio">
+        <h3 id="first-p">Game design</h3>
+        <p>
+          Návrh prostředí aplikace hotelového řetězce Coral Heaven byl pečlivě
+          navržen pomocí nástroje Figma, který je ideální pro tvorbu wireframů a
+          následných maket. Na začátku procesu jsme vytvořili podrobné
+          wireframy, které definovaly základní strukturu a funkčnost aplikace.
+          Tyto wireframy mně umožnily snadno vizualizovat uspořádání různých
+          prvků na stránkách aplikace, jako jsou navigační menu, bannery, sekce
+          s informacemi o pokojích a rezervační formuláře. Důraz jsem kladl na
+          intuitivní uživatelské rozhraní, které uživatelům umožní snadno najít
+          potřebné informace a provést rezervaci.
+        </p>
+        <p>
+          <img id="game-design" src="files/design.jpg" alt="" srcset="" />
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="portfolio">
+        <h3 id="first-p">Website menu design</h3>
+        <p>
+          Návrh prostředí aplikace hotelového řetězce Coral Heaven byl pečlivě
+          navržen pomocí nástroje Figma, který je ideální pro tvorbu wireframů a
+          následných maket. Na začátku procesu jsme vytvořili podrobné
+          wireframy, které definovaly základní strukturu a funkčnost aplikace.
+          Tyto wireframy mně umožnily snadno vizualizovat uspořádání různých
+          prvků na stránkách aplikace, jako jsou navigační menu, bannery, sekce
+          s informacemi o pokojích a rezervační formuláře. Důraz jsem kladl na
+          intuitivní uživatelské rozhraní, které uživatelům umožní snadno najít
+          potřebné informace a provést rezervaci.
+        </p>
+        <p>
+          <img id="game-design" src="files/menu-design.jpg" alt="" srcset="" />
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="portfolio">
+        <h3 id="first-p">For fun</h3>
+        <p>
+          Návrh prostředí aplikace hotelového řetězce Coral Heaven byl pečlivě
+          navržen pomocí nástroje Figma, který je ideální pro tvorbu wireframů a
+          následných maket. Na začátku procesu jsme vytvořili podrobné
+          wireframy, které definovaly základní strukturu a funkčnost aplikace.
+          Tyto wireframy mně umožnily snadno vizualizovat uspořádání různých
+          prvků na stránkách aplikace, jako jsou navigační menu, bannery, sekce
+          s informacemi o pokojích a rezervační formuláře. Důraz jsem kladl na
+          intuitivní uživatelské rozhraní, které uživatelům umožní snadno najít
+          potřebné informace a provést rezervaci.
+        </p>
+        <p>
+          <img id="game-design" src="files/for-fun.gif" alt="" srcset="" />
+        </p>
+      </div>
+    </div>
   </body>
 </html>
