@@ -81,3 +81,11 @@ a {
 a:hover {
   color: #5e5e5e!important;
 }
+
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
