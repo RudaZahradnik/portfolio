@@ -12,7 +12,7 @@ body {
 
 #avatar {
   width: 400px;
-  padding-left: 30px;
+  margin-left: -12px;
 }
 
 #headline {
