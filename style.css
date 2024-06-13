@@ -1,128 +1,108 @@
+:root {
+  --color-black: #1c1f24;
+  --color-black-400: hsl(218, 13%, 23%);
+  --color-white: #e3e0db;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 body {
-  font-family: "Manrope", sans-serif !important;
-}
-
-#header {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  
-}
-
-#avatar {
-  width: 400px;
-  margin-left: -12px;
-}
-
-#headline {
-  font-size: 7.993rem;
-  font-weight: 700;
-  color: #202020;
   font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  background-color: var(--color-white);
 }
 
-#headline2 {
-  font-size: 7.993rem;
-  font-weight: 700;
-  transform: translate(-55px, 22px);
-  color: #5e5e5e;
-  font-family: "Manrope", sans-serif;
-}
-
-.container {
-  border-left: solid 20px #202020;
-}
-
-#zivotopis {
-  background-color: #202020;
-  color: #fff;
-  padding: 20px;
-}
-
-.row h2 {
+h2 {
   font-size: 2.827rem;
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-#first-p {
-  padding-top: 16px;
-}
-
-#portfolio {
-  background-color: #fff;
-  padding: 20px;
-}
-
-.row h3 {
+h3 {
   font-size: 1.999rem;
-  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-#projekt {
-  padding: 20px;
+mark {
+  background-color: var(--color-black-400);
+  color: var(--color-white);
+  padding: 0.2rem;
+  border-bottom: 0;
 }
 
-.col-3 {
-  width: 22%;
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-#game-design {
-  max-width: 1250px;
+.show-only-on-screenreader {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-#icon {
-  padding-top: 30px;
-  width: 60px;
-  height: auto;
+section {
+  padding: 2rem 0;
 }
 
-a {
-  font-size: 1.414rem;
-  font-weight: 700;
-  color: #ffffff!important;
-  text-decoration: none!important;
+section .wrap {
+  position: relative;
 }
 
-a:hover {
-  color: #5e5e5e!important;
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 2rem 0;
 }
 
-.fade-in-image { animation: fadeIn 5s; }
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.section-hero {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  overflow: hidden;
 }
 
-#subheadline {
-  font-size: 2.827rem;
-  justify-content: flex-start;
+.section-biography {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
-ul {
-  list-style-type: none;
-    font-size: 1.414rem;
+.section-portfolio {
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  border-top: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+  margin-bottom: 1rem;
 }
 
-li {
-  background-color: #202020;
-  color: #ffffff;
-  font-weight: 700;
-  margin: 16px 0;
-  padding: 5px 50px 5px 5px;
+/* poslední portfolio před footer (nedá se použít :last-child) */
+.section-portfolio:has(+ footer) {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
-#menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.section-hero .wrap:before,
+.section-portfolio .wrap:before {
+  content: "";
+  display: table;
+  background-color: var(--color-black);
+  width: 2px;
+  height: calc(100% + 10rem);
+  position: absolute;
+  left: -4rem;
+  top: -5rem;
 }
 
-#kontakty {
-  background-color: #202020;
-  color: #fff;
-  padding: 20px;
+.section-hero .wrap:before {
+  animation: hero-line 1s ease-out;
 }

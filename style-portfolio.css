@@ -1,0 +1,64 @@
+.coral-wrap {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.coral-left p {
+  max-width: 40ch;
+}
+
+.coral-right {
+  margin-bottom: -7rem;
+  margin-top: -10rem;
+}
+
+.game-image {
+  width: calc(100% + 6rem);
+  margin-left: -6rem;
+  margin-top: 2rem;
+}
+
+.larger-text {
+  font-size: 1.5rem;
+}
+
+.max-30ch {
+  max-width: 30ch !important;
+}
+
+.game-top p,
+.menu-top p {
+  max-width: 40ch;
+}
+
+.game-middle {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 4rem;
+}
+
+.menu-middle {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+}
+
+.menu-p-offset {
+  margin-top: -3rem;
+}
+
+.fun-wrap {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.fun-left p {
+  max-width: 40ch;
+}
+
+.fun-right {
+  margin-bottom: -6rem;
+  margin-top: -8rem;
+}

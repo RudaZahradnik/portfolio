@@ -1,0 +1,98 @@
+.hero-content {
+  min-height: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-header {
+  font-size: 7rem;
+  line-height: 7rem;
+  font-weight: 700;
+  position: absolute;
+  margin: 0;
+  bottom: 4rem;
+  right: 7ch;
+
+  /* animation fade in right */
+  animation: fade-in-right 1s ease-out;
+}
+
+.hero-name {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 5.5rem;
+
+  color: var(--color-white);
+  text-shadow: 3px 3px 0 var(--color-black), -3px 3px 0 var(--color-black),
+    -3px -3px 0 var(--color-black), 3px -3px 0 var(--color-black);
+}
+
+.hero-lastname {
+  position: absolute;
+  top: 0.3ch;
+  left: calc(4ch - 0.46ch);
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  line-height: 2rem;
+  position: relative;
+  margin-top: -0.5ch;
+  background-color: var(--color-white);
+  z-index: -1;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -4rem;
+  left: -4rem;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+}
+
+.hero-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-nav ul a {
+  color: var(--color-white);
+  text-decoration: none;
+  background-color: var(--color-black);
+  padding: 1rem;
+  transform: translateY(100%);
+  display: inline-block;
+  animation: fade-up 0.25s ease-out forwards 1s;
+  border: 2px solid var(--color-black);
+  border-bottom: none;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.hero-nav ul a:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+/* every next nth child has longer delay */
+.hero-nav ul li:nth-child(1) a {
+  animation-delay: 1s;
+}
+
+.hero-nav ul li:nth-child(2) a {
+  animation-delay: 1.15s;
+}
+
+.hero-nav ul li:nth-child(3) a {
+  animation-delay: 1.25s;
+}

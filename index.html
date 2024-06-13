@@ -11,163 +11,313 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style-animations.css" />
+    <link rel="stylesheet" href="style-hero.css" />
+    <link rel="stylesheet" href="style-biography.css" />
+    <link rel="stylesheet" href="style-portfolio.css" />
+    <link rel="stylesheet" href="style-footer.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-12" id="header"><span id="headline">Rudolf</span><span id="headline2">Zahradník</span></div>
-        
-      </div>     
-      <div class="row">
-        <div class="col-4">
-          <img id="avatar" src="files/avatar-ruda.png" alt="" srcset="" />
+    <section
+      class="section-hero"
+      itemscope
+      itemtype="https://schema.org/Person"
+    >
+      <div class="wrap">
+        <img
+          class="hero-image"
+          src="avatar-ruda.webp"
+          alt="Rudolf Zahradník"
+          itemprop="image"
+        />
+        <div class="hero-content">
+          <h1 itemprop="name" class="hero-header">
+            <div class="hero-name" itemprop="givenName">Rudolf</div>
+            <div class="hero-lastname" itemprop="familyName">Zahradník</div>
+            <div class="hero-subtitle" itemprop="jobTitle">UX designer</div>
+          </h1>
+          <address class="show-only-on-screenreader">
+            <div>
+              <span itemprop="address">Třemešná 404</span>
+              <br />
+              <span itemprop="postalCode">793 82</span>
+              <span itemprop="addressLocality">Třemešná</span>
+            </div>
+            <div itemprop="email">
+              <a href="mailto:ruda@webhrad.cz">ruda@webhrad.cz</a>
+            </div>
+            <div itemprop="telephone">
+              <a href="tel:+420732 249 051">+420732249051</a>
+            </div>
+            <div itemscope itemprop="https://schema.org/CreativeWork">
+              <header itemprop="identifier">Hlavní firemní stránka</header>
+              <p itemprop="accessibilitySummary">
+                Více o práci, kterou dělám, naleznete na webhrad.cz.
+              </p>
+              <a itemprop="url" href="https://www.webhrad.cz">webhrad.cz</a>
+            </div>
+            <div itemscope itemprop="https://schema.org/URL">
+              <header itemprop="identifier">LinkedIn</header>
+              <a
+                itemprop="url"
+                href="http://www.linkedin.com/in/rudolf-zahradnik"
+                >Mgr. Rudolf Zahradník Linkedin</a
+              >
+            </div>
+          </address>
+
+          <nav class="hero-nav">
+            <ul>
+              <li><a href="#zivotopis">Životopis</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#kontakty">Kontakty</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="col-4" id="subheadline">UX designer</div>
-        
-       
-      <div class="col-4" id="menu">
-      <ul>
-          <li><a href="#zivotopis">Životopis</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#kontakty">Kontakty</a></li>
-      </ul>  
-
-
       </div>
-        
-      </div>   
-    </div>
-    <div class="container">
-      <div class="row" id="zivotopis">
+    </section>
+    <section class="section-biography" id="zivotopis">
+      <div class="wrap">
         <h2>Životopis</h2>
-        <p id="first-p">
-          Jsem Rudolf Zahradník, zkušený digitální a webový specialista se
-          zaměřením na tvorbu webových stránek a digitální marketing. Momentálně
-          pracuji jako OSVČ a pod značkou Web HRAD tvořím webové stránky na
-          míru. Mými hlavními činnostmi jsou vedení projektů, navrhování UX/UI
-          designu pomocí nástroje Figma, programování v HTML, CSS a JavaScriptu,
-          a práce s CMS WordPress, včetně šablon DIVI a OXYGEN. Také se věnuji
-          optimalizaci webových stránek z hlediska rychlosti a bezpečnosti a
-          implementaci SEO technik.
-        </p>
-        <p>
-          Ve své kariéře jsem získal bohaté zkušenosti s různými aspekty
-          digitálního marketingu a webového vývoje. Od roku 2018 působím jako
-          Digital and Web Specialist ve společnosti Provident Financial, kde mám
-          na starosti community management, obsahovou strategii na sociálních
-          sítích a blogu, e-mailing, správu webových stránek a SEM/SEO aktivity.
-          Dříve jsem pracoval na různých pozicích v oblasti zákaznické podpory a
-          prodeje u firem jako innogy a MONETA Money Bank. Mám vysokoškolské
-          vzdělání v oboru marketingové komunikace a plynně hovořím česky,
-          středně pokročile anglicky a základy polštiny. Ve volném čase se
-          věnuji tvorbě webových stránek, kolektivním sportům, hikingu a RPG
-          hrám.
-        </p>
+        <div>
+          <div class="biography-top">
+            <p class="biography-intro">
+              Jsem Rudolf Zahradník, zkušený digitální a webový
+              <mark>specialista</mark> se zaměřením na tvorbu webových stránek a
+              digitální marketing. Momentálně pracuji jako OSVČ a pod značkou
+              <a href="https://www.webhrad.cz/">Web HRAD</a> tvořím webové
+              stránky na míru.
+            </p>
+            <aside class="skills-top">
+              <h5>Moje skilly</h5>
+              <ul class="">
+                <li>Figma</li>
+                <li>HTML & CSS</li>
+                <li>rychlost</li>
+                <li>JavaScript</li>
+                <li>SEO</li>
+                <li>Wordpress</li>
+                <li>DIVI</li>
+                <li>Oxygen</li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="biography-middle">
+            <p>
+              Mými hlav­ní­mi čin­nost­mi jsou ve­de­ní pro­jek­tů,
+              na­vr­ho­vá­ní <mark>UX/UI de­sig­nu</mark> po­mo­cí ná­stro­je
+              Figma, pro­gra­mo­vá­ní v HTML, CSS a Ja­vaScrip­tu, a práce s CMS
+              Wor­d­Press, včet­ně ša­b­lon DIVI a OXY­GEN.
+            </p>
+
+            <p>
+              Také se vě­nu­ji op­ti­ma­li­za­ci webo­vých strá­nek z hle­dis­ka
+              rych­los­ti a&nbsp;bez­peč­nos­ti a im­ple­men­ta­ci SEO tech­nik.
+              Ve své ka­ri­é­ře jsem zís­kal bo­ha­té zku­še­nos­ti s růz­ný­mi
+              aspek­ty di­gi­tál­ní­ho mar­ke­tingu a&nbsp;webo­vé­ho vý­vo­je.
+            </p>
+          </div>
+          <div class="biography-bottom">
+            <p>
+              Od roku 2018 pů­so­bím jako Di­gi­tal and Web Spe­ci­a­list ve
+              spo­leč­nos­ti Pro­vi­dent Fi­nan­cial, kde mám na sta­ros­ti
+              com­mu­ni­ty ma­nage­ment,
+              <mark>ob­sa­ho­vou stra­te­gii</mark> na so­ci­ál­ních sí­tích a
+              blogu, e-mai­ling, sprá­vu webo­vých strá­nek a SEM/SEO
+              ak­ti­vi­ty.
+            </p>
+            <p>
+              Dříve jsem pracoval na různých pozicích v oblasti zákaznické
+              podpory a prodeje u firem jako innogy a MONETA Money Bank.
+            </p>
+          </div>
+          <div class="biography-bottom">
+            <p>
+              Mám vysokoškolské vzdělání v oboru marketingové komunikace a
+              plynně hovořím česky, středně pokročile anglicky a základy
+              polštiny. Ve volném čase se věnuji tvorbě webových stránek,
+              kolektivním sportům, hikingu a RPG hrám.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row" id="portfolio">
+    </section>
+    <section class="section-portfolio" id="portfolio">
+      <div class="wrap">
         <h2>Portfolio</h2>
-        <h3 id="first-p">Coral heaven app</h3>
-        <p>
-          Návrh prostředí aplikace hotelového řetězce Coral Heaven byl pečlivě
-          navržen pomocí nástroje Figma, který je ideální pro tvorbu wireframů a
-          následných maket. Na začátku procesu jsme vytvořili podrobné
-          wireframy, které definovaly základní strukturu a funkčnost aplikace.
-          Tyto wireframy mně umožnily snadno vizualizovat uspořádání různých
-          prvků na stránkách aplikace, jako jsou navigační menu, bannery, sekce
-          s informacemi o pokojích a rezervační formuláře. Důraz jsem kladl na
-          intuitivní uživatelské rozhraní, které uživatelům umožní snadno najít
-          potřebné informace a provést rezervaci.
-        </p>
-        <p>
-          <div class="fade-in-image"><img src="files/coral-heaven.gif" alt="" srcset="" /></div>
-        </p>
+        <div class="coral-wrap">
+          <div class="coral-left">
+            <h3>Coral heaven app</h3>
+            <p>
+              Návrh prostředí aplikace hotelového řetězce Coral Heaven byl
+              pečlivě navržen pomocí nástroje Figma, který je ideální pro tvorbu
+              wireframů a následných maket.
+            </p>
+            <p class="larger-text max-30ch">
+              Na začátku procesu jsem vytvořil podrobné wireframy, které
+              definovaly základní strukturu a funkčnost aplikace.
+            </p>
+            <p>
+              Tyto wireframy mně umožnily snadno vizualizovat uspořádání různých
+              prvků na stránkách aplikace, jako jsou navigační menu, bannery,
+              sekce s informacemi o pokojích a rezervační formuláře. Důraz jsem
+              kladl na <mark>intuitivní uživatelské rozhraní</mark>, které
+              uživatelům umožní snadno najít potřebné informace a provést
+              rezervaci.
+            </p>
+          </div>
+          <div class="coral-right">
+            <iframe
+              style="border: 2px solid #1c1f24"
+              width="400"
+              height="850"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7iZ8uc6kT3zVUGXNy3eiOG%2FCoral-heaven%3Fnode-id%3D5-2%26t%3DGj5UsFYTgPNvwlhr-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1"
+              allowfullscreen
+            ></iframe>
+            <!-- <img
+              src="coral-heaven.gif"
+              alt="Coral Heaven app"
+              class="coral-image"
+            /> -->
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <div class="row" id="portfolio">
-        <h3 id="first-p">Game design</h3>
-        <p>
-          Tento projekt představuje návrh úvodní stránky video hry nazvané "Human 2.0", který byl vytvořen ve Figma s použitím AI pro tvorbu vizuálních prvků. 
-          Design se zaměřuje na futuristickou a technologickou estetiku, což je patrné z detailně vykreslených kyborgických tváří s výraznými světelnými efekty. 
-          Uživatelské rozhraní je jednoduché a přehledné, s jasně definovanými možnostmi jako "New Game", "Continue", "Settings", "Bonus", "About" a "Quit". 
-          Položky menu jsou snadno čitelné díky kontrastním barvám a dobře zvolenému písmu. Celkový vzhled je atraktivní a poutavý, což pravděpodobně zaujme 
-          hráče a navodí atmosféru high-tech budoucnosti.
-        </p>
-        <p>
-          <div class="fade-in-image"><img id="game-design" src="files/design.jpg" alt="" srcset="" /></div>
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row" id="portfolio">
-        <h3 id="first-p">Website menu design</h3>
-        <p>
-          Tento projekt představuje návrh hlavního menu desktopové varianty webových stránek malého podnikatele, který využívá princip bento box. Design byl vytvořen podle wireframů a makety, které byly zhotoveny v nástroji Figma.
-
-
-        </p>
-        <p>
-          Z pohledu UX je tento návrh velmi intuitivní a uživatelsky přívětivý. Hlavní menu je rozděleno do jasně definovaných sekcí, které jsou snadno přístupné a srozumitelné. Každý bento box obsahuje specifické kategorie jako "Úvod", "Recenze", "Ceník", "Služby", "On-line objednávky", "Dostupné vozy", "Kontakt" a "Galerie", což uživatelům umožňuje rychle najít požadované informace.
-        </p>
-        <p>
-          Použití ikon vedle textu zvyšuje vizuální přitažlivost a pomáhá při rychlé orientaci na stránce. Design také zahrnuje jasné CTA (Call to Action) tlačítka, například "Nabídka vozů" a "Ceník služeb", která jsou dobře viditelná a vybízejí k interakci. Celkově tento návrh přináší efektivní a příjemný uživatelský zážitek, který podporuje snadnou navigaci a dostupnost informací.
-        </p>
-        <p>
-          <div class="fade-in-image"><img id="game-design" src="files/menu-design.jpg" alt="" srcset="" /></div>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row" id="portfolio">
-        <h3 id="first-p">For fun</h3>
-        <p>
-          Tento projekt představuje práci s animacemi a prototypováním ve Figma, sloužící jako ukázka možností, jak lze využít moderní digitální nástroje v oblasti UX a UI. Animace znázorňující plynulý pohyb mezi mraky demonstruje schopnost vytvářet interaktivní a vizuálně přitažlivé prvky, které mohou výrazně zlepšit uživatelský zážitek. Použití Figma umožňuje návrhářům rychle iterovat a testovat různé koncepty, zlepšovat interaktivitu a vizuální tok webových stránek či aplikací. Tato ukázka poskytuje jasnou představu o tom, jak mohou dynamické animace a prototypování zjednodušit komunikaci designových záměrů a zvýšit zapojení uživatelů prostřednictvím hladkých a poutavých vizuálních efektů.
-        </p>
-        <p>
-          <div class="fade-in-image"><img id="game-design" src="files/for-fun.gif" alt="" srcset="" /></div>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row" id="kontakty">
-        <h2>Kontakty</h2>
-        <div class="col-3">
-          <img  src="files/telefon.png" alt="" srcset="" id="icon">
-          <p id="first-p">
-            <a href="tel:+420732249051">+420 732 249 051</a>
+    <section class="section-portfolio">
+      <div class="wrap">
+        <h3>Game design</h3>
+        <div class="game-top">
+          <p class="larger-text">
+            Tento projekt představuje návrh úvodní stránky video hry nazvané
+            "Human 2.0", který byl vytvořen ve Figma s použitím AI pro tvorbu
+            vizuálních prvků.
           </p>
         </div>
-        <div class="col-3">
-          <img  src="files/mail.png" alt="" srcset="" id="icon">
-          <p id="first-p">
-            <a href="mailto:ruda@webhrad.cz">ruda@webhrad.cz</a>
-          </p></div>
-        <div class="col-3">
-          <img  src="files/linkedin.png" alt="" srcset="" id="icon">
-          <p id="first-p">
-            <a href="http://www.linkedin.com/in/rudolf-zahradnik" target="_blank">Mgr. Rudolf Zahradník</a>
+        <div class="game-middle">
+          <p>
+            Design se zaměřuje na futuristickou a technologickou estetiku, což
+            je patrné z detailně vykreslených kyborgických tváří s výraznými
+            světelnými efekty.
+          </p>
+          <p>
+            Uživatelské rozhraní je jednoduché a přehledné, s jasně definovanými
+            možnostmi jako „New Game“, „Continue“, „Settings“, „Bonus“, „About“
+            a „Quit“. Položky menu jsou snadno čitelné díky kontrastním barvám a
+            dobře zvolenému písmu. Celkový vzhled je
+            <mark>atraktivní a poutavý</mark>, což pravděpodobně zaujme hráče a
+            navodí atmosféru high-tech budoucnosti.
           </p>
         </div>
-        <div class="col-3">
-          <img  src="files/adresa.png" alt="" srcset="" id="icon">
-          <p id="first-p">
-            <a href="https://maps.app.goo.gl/nKNZGqURb1ELU6Yw6" target="_blank">
-            Třemešná 404 <br>
-            793 82 Třemešná 
-            </a>
-          </p></div>
+        <img
+          src="game-design.webp"
+          alt="Game design UI, Human 2.0"
+          class="game-image"
+        />
       </div>
-    </div>
+    </section>
+
+    <section class="section-portfolio">
+      <div class="wrap">
+        <h3>Website menu design</h3>
+        <div class="menu-top">
+          <p class="larger-text">
+            Tento projekt představuje návrh hlavního menu desktopové varianty
+            webových stránek malého podnikatele, který využívá princip
+            <strong>bento box</strong>. Design byl vytvořen podle wireframů a
+            makety, které byly zhotoveny v nástroji Figma.
+          </p>
+        </div>
+        <div class="menu-middle">
+          <p>
+            Z pohledu UX je tento návrh velmi intuitivní a uživatelsky
+            přívětivý. Hlavní menu je rozděleno do jasně definovaných sekcí,
+            které jsou <mark>snadno přístupné</mark> a srozumitelné. Každý bento
+            box obsahuje specifické kategorie jako "Úvod", "Recenze", "Ceník",
+            "Služby", "On-line objednávky", "Dostupné vozy", "Kontakt" a
+            "Galerie", což uživatelům umožňuje rychle najít požadované
+            informace.
+          </p>
+
+          <p class="menu-p-offset">
+            Použití ikon vedle textu zvyšuje vizuální přitažlivost a pomáhá při
+            rychlé orientaci na stránce. Design také zahrnuje jasné CTA (Call to
+            Action) tlačítka, například "Nabídka vozů" a "Ceník služeb", která
+            jsou dobře viditelná a vybízejí k interakci. Celkově tento návrh
+            přináší efektivní a příjemný uživatelský zážitek, který podporuje
+            snadnou navigaci a dostupnost informací.
+          </p>
+        </div>
+
+        <img
+          src="menu-design.webp"
+          alt="Bento box, návrh hlavního menu desktopové varianty
+          webových stránek malého podnikatele"
+          class="game-image"
+        />
+      </div>
+    </section>
+    <section class="section-portfolio">
+      <div class="wrap">
+        <h3>For fun</h3>
+
+        <div class="fun-wrap">
+          <div class="fun-left">
+            <p class="larger-text max-30ch">
+              Tento projekt představuje práci s animacemi a prototypováním ve
+              Figma, sloužící jako ukázka možností, jak lze využít moderní
+              digitální nástroje v oblasti UX a UI.
+            </p>
+            <p>
+              Animace znázorňující plynulý pohyb mezi mraky demonstruje
+              schopnost vytvářet interaktivní a vizuálně přitažlivé prvky, které
+              mohou výrazně zlepšit uživatelský zážitek.
+            </p>
+            <p>
+              Použití Figma umožňuje návrhářům rychle iterovat a testovat různé
+              koncepty, zlepšovat interaktivitu a vizuální tok webových stránek
+              či aplikací. Tato ukázka poskytuje jasnou představu o tom, jak
+              mohou dynamické animace a prototypování zjednodušit komunikaci
+              designových záměrů a zvýšit zapojení uživatelů prostřednictvím
+              hladkých a poutavých vizuálních efektů.
+            </p>
+          </div>
+          <div class="fun-right">
+            <iframe
+              style="border: 2px solid #1c1f24"
+              width="400"
+              height="850"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FO9sRpfSwygrAGqFZfUHBY5%2FUntitled%3Ftype%3Ddesign%26node-id%3D18-62%26t%3D5s9bjc93v2J8qlft-1%26scaling%3Dscale-down%26page-id%3D18%253A61%26starting-point-node-id%3D18%253A62"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="kontakty">
+      <div class="wrap">
+        <div class="footer-inner">
+          <h2>Kontakty</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="tel:+420732 249 051">+420 732 249 051</a>
+            </li>
+            <li>
+              <a href="mailto:ruda@webhrad.cz">ruda@webhrad.cz</a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/nKNZGqURb1ELU6Yw6">
+                Třemešná 404, Třemešná 793 82
+              </a>
+            </li>
+
+            <li>
+              <a href="http://www.linkedin.com/in/rudolf-zahradnik">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
